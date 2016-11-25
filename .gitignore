@@ -1,4 +1,7 @@
 bin/
-.vs/
 obj/
-wwwroot/lib
+*.suo
+*.user
+*.sln.docstates
+.vs/*
+lib/
