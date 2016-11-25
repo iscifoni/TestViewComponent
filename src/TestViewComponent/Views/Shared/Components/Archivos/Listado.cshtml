@@ -1,0 +1,13 @@
+﻿@model IList<TestViewComponent.ViewModels.ArchivoViewModel>
+@using TestViewComponent.ViewComponents.Archivo
+
+<div class="documentos">
+    <hr />
+    <div class="acciones-navegacion superior">
+        <a class="enlace-sin-ruta eliminar-seccion" data-toggle="collapse" data-target="#anadir">
+            <span class="icono-anadir icono-texto icono-personal"></span>
+            <span>Add</span>
+        </a>
+    </div>
+    @await Component.InvokeAsync("Archivos", new { vista = Archivos.Nuevo })
+</div>
