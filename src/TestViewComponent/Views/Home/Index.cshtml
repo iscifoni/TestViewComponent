@@ -1,9 +1,0 @@
-﻿@using TestViewComponent.ViewComponents.Archivo
-@model TestViewComponent.ViewModels.NoticiaViewModel
-@{
-    ViewData["Title"] = "Home Page";
-}
-
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
-    @await Component.InvokeAsync("Archivos", new { vista = Archivos.Listado, archivos = Model.Archivos, titulo = "Documentos adjuntos" })
-</div>
